@@ -1,6 +1,6 @@
-package src.main.java.ge.tbc.testautomation.javaoop.util;
+package ge.tbc.testautomation.javaoop.util;
 
-import src.main.java.ge.tbc.testautomation.javaoop.figures.Circle;
+import  ge.tbc.testautomation.javaoop.figures.Circle;
 
 public class Util {
     public static String circleToString(Circle circle) {

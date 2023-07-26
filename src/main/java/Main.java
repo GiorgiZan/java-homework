@@ -1,5 +1,3 @@
-package src.main.java;
-
 public class Main {
     public static int add(int x, int y) {
         return x + y;
