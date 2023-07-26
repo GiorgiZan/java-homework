@@ -1,4 +1,4 @@
-package ge.tbc.testautomation.javaoop.figures;
+package src.main.java.ge.tbc.testautomation.javaoop.figures;
 
 public class Circle {
     private double radius;
