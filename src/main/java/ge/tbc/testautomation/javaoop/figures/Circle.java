@@ -5,7 +5,7 @@ import ge.tbc.testautomation.abstractClassesInterfaces.interfaces.IValidCircle;
 import ge.tbc.testautomation.exceptionsStringOperationsRegex.LimitException;
 import ge.tbc.testautomation.exceptionsStringOperationsRegex.RadiusException;
 
-public class Circle extends Figure implements IResizableCircle, IValidCircle {
+public class Circle extends Figure implements IResizableCircle, IValidCircle, Comparable {
     private double radius;
 
     public Circle(double radius) {
@@ -43,7 +43,24 @@ public class Circle extends Figure implements IResizableCircle, IValidCircle {
     }
 
 
+    // 6) start
+    @Override
+    public String toString() {
+        return "Circle with radius: " + radius;
+    }
 
+    // 6) THIS ONE IS 6 TOO
+    @Override
+    public int compareTo(Object o) {
+        Circle other = (Circle) o;
+        if (this.radius > other.radius) {
+            return 1;
+        } else if (this.radius < other.radius) {
+            return -1;
+        } else {
+            return 0;
+        }
+    }
 
 
 
